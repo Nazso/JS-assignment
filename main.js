@@ -36,6 +36,6 @@ function playGround (playerSelection, computerSelection) {
 const playerSelection = "Paper";
 const computerSelection = computerPlay();
 
-console.log(computerSelection)
-console.log(playGround(playerSelection, computerSelection))
+// console.log(computerSelection)
+// console.log(playGround(playerSelection, computerSelection))
 
