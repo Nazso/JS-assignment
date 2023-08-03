@@ -33,9 +33,46 @@ function playGround (playerSelection, computerSelection) {
     }
 }
 
-const playerSelection = "Paper";
-const computerSelection = computerPlay();
+// let playerSelection = 'Paper';
+// const computerSelection = computerPlay();
 
 // console.log(computerSelection)
 // console.log(playGround(playerSelection, computerSelection))
 
+function game () {
+    let playerScore = 0;
+    let computerScore = 0;
+
+    for(let i = 1; i <= 5; i++) {
+        let playerSelection = prompt(
+            `Round ${i} choose Rock, Paper os Scissors: !`
+        )
+
+        if(playerSelection === null) {
+            const confirmMessage = confirm(`Invalid input! Please write Rock, Paper os Scissors!`)
+
+            if (confirmMessage) {
+                console.log('This round has been deleted!')
+                i--
+            }
+            else {
+                continue
+            }
+        }
+
+        if (
+            (playerSelection !== null) &&
+            (playerSelection.toLowerCase() !== 'rock') &&
+            (playerSelection.toLowerCase() !== 'paper') &&
+            (playerSelection.toLowerCase() !== 'scissors')
+        ) {
+            alert(
+                `Invalid answer! Your answer ${playerSelection} is not suitable!`
+            )
+            i--;
+            continue;
+        }
+    }
+}
+
+game();
