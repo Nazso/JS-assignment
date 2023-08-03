@@ -75,6 +75,7 @@ function game () {
         const computerSelection = computerPlay();
         const result = playGround(playerSelection, computerSelection);
         alert(result);
+        
         console.log('The result is: ' + result);
 
         if(
