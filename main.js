@@ -33,7 +33,7 @@ function playGround (playerSelection, computerSelection) {
     }
 }
 
-let playerSelection = 'Paper';
+let playerSelection;
 // const computerSelection = computerPlay();
 
 // console.log(computerSelection)
@@ -55,7 +55,7 @@ function game () {
                 console.log('This round has been deleted!')
             }
             else {
-                    i--
+                i--
                 continue
             }
         }
@@ -91,12 +91,18 @@ function game () {
             computerScore++
         }
     }
-    console.log(playerSelection)
+    // console.log(playerSelection)
     // console.log(computerSelection)
     console.log(playerScore)
     console.log(computerScore)
 
-
+    if(playerScore > computerScore) {
+        alert(`Congratulation! Your score is ${playerScore} You won the game!`)
+    }
+    else if (playerScore < computerScore) {
+        alert(`Sorry, your score is ${playerScore} and the computer's score is ${computerScore}. You lost the game!`)
+    }
+    else {`It is a draw! Both of you have ${playerScore} score!`}
     
 }
 
