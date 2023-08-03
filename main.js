@@ -29,7 +29,7 @@ function playGround (playerSelection, computerSelection) {
     }
 
     else {
-        return "You lost the game!"
+        return `You lost the game, because ${computerSelection} beats ${playerSelection}`
     }
 }
 
