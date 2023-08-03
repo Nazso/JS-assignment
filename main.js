@@ -45,11 +45,11 @@ function game () {
 
     for(let i = 1; i <= 5; i++) {
         let playerSelection = prompt(
-            `Round ${i} choose Rock, Paper os Scissors: !`
+            `Round ${i} choose Rock, Paper or Scissors: !`
         )
 
         if(playerSelection === null) {
-            const confirmMessage = confirm(`Invalid input! Please write Rock, Paper os Scissors!`)
+            const confirmMessage = confirm(`Invalid input! Please write Rock, Paper or Scissors!`)
 
             if (confirmMessage) {
                 console.log('This round has been deleted!')
