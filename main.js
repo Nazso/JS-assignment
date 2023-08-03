@@ -33,7 +33,7 @@ function playGround (playerSelection, computerSelection) {
     }
 }
 
-// let playerSelection = 'Paper';
+let playerSelection = 'Paper';
 // const computerSelection = computerPlay();
 
 // console.log(computerSelection)
@@ -53,26 +53,51 @@ function game () {
 
             if (confirmMessage) {
                 console.log('This round has been deleted!')
-                i--
             }
             else {
+                    i--
                 continue
             }
         }
 
         if (
-            (playerSelection !== null) &&
-            (playerSelection.toLowerCase() !== 'rock') &&
-            (playerSelection.toLowerCase() !== 'paper') &&
-            (playerSelection.toLowerCase() !== 'scissors')
+            playerSelection.toLowerCase() !== 'rock' &&
+            playerSelection.toLowerCase() !== 'paper' &&
+            playerSelection.toLowerCase() !== 'scissors'
         ) {
             alert(
                 `Invalid answer! Your answer ${playerSelection} is not suitable!`
             )
-            i--;
+                i--
             continue;
         }
+
+        const computerSelection = computerPlay();
+        const result = playGround(playerSelection, computerSelection);
+        alert(result);
+        console.log('The result is: ' + result);
+
+        if(
+            result.includes('win')
+            // (playerSelection === "paper" && computerSelection === "rock") ||
+            // (playerSelection === "rock" && computerSelection === "scissors") ||
+            // (playerSelection === "scissors" && computerSelection === "paper")
+        ) {
+            playerScore++
+        }
+        else if(
+            result.includes('lost')
+        ) {
+            computerScore++
+        }
     }
+    console.log(playerSelection)
+    // console.log(computerSelection)
+    console.log(playerScore)
+    console.log(computerScore)
+
+
+    
 }
 
 game();
