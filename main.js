@@ -69,7 +69,7 @@ function game () {
                 `Invalid answer! Your answer ${playerSelection} is not suitable!`
             )
                 i--
-            continue;
+                continue;
         }
 
         const computerSelection = computerPlay();
