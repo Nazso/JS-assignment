@@ -75,7 +75,7 @@ function game () {
         const computerSelection = computerPlay();
         const result = playGround(playerSelection, computerSelection);
         alert(result);
-        
+
         console.log('The result is: ' + result);
 
         if(
@@ -92,10 +92,10 @@ function game () {
             computerScore++
         }
     }
-    // console.log(playerSelection)
+    // console.log(playerSelection
     // console.log(computerSelection)
-    console.log(playerScore)
-    console.log(computerScore)
+    console.log(`Your score: ${playerScore}`)
+    console.log(`The computer score: ${computerScore}`)
 
     if(playerScore > computerScore) {
         alert(`Congratulation! Your score is ${playerScore} You won the game!`)
