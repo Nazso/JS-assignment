@@ -1,5 +1,6 @@
 const addName = document.querySelector("#addName");
 const saveName = document.querySelector(".saveName");
+const resetPage = document.querySelector(".reset");
 
 const nameBox = document.querySelector(".nameBox");
 const text = document.querySelector(".text")
@@ -11,13 +12,17 @@ function headName() {
 
 }
 
+resetPage.addEventListener('click', () => {
+    location.reload()
+})
+
 
 saveName.addEventListener('click', () => {
 
     nameBox.removeChild(text)
-
     headName();
-
+    
     console.log(addName.value)
+    addName.value = ""
 
 })
