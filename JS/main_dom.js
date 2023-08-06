@@ -4,15 +4,19 @@ const saveName = document.querySelector(".saveName");
 const nameBox = document.querySelector(".nameBox");
 const text = document.querySelector(".text")
 
+function headName() {
+    const nameText = document.createElement("p")
+    nameBox.appendChild(nameText)
+    nameText.innerHTML = `<p>Welcome ${addName.value}<p>`
+
+}
+
 
 saveName.addEventListener('click', () => {
 
     nameBox.removeChild(text)
 
-
-    const nameText = document.createElement("p")
-    nameBox.appendChild(nameText)
-    nameText.innerHTML = `<p>Welcome ${addName.value}<p>`
+    headName();
 
     console.log(addName.value)
 
