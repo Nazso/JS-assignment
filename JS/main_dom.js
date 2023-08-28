@@ -20,7 +20,6 @@ resetPage.addEventListener('click', () => {
     location.reload()
 })
 
-
 saveName.addEventListener('click', () => {
 
     rounds = numberOfRounds.value;
