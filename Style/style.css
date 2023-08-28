@@ -1,5 +1,13 @@
 body {
     background: no-repeat radial-gradient(antiquewhite, rgb(222, 166, 93));
-    min-width: min-content;
-    min-height:800px;
+    min-width: 100%;
+    min-height:80vw;
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(232, 133, 13);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
 }
