@@ -33,7 +33,7 @@ playBtn.addEventListener("click", () => {
     const play = computerChoosen()
     
     let playText = document.createElement("p")
-
+    
     computerChoose.appendChild(playText)
     playText.innerText = play    
     
