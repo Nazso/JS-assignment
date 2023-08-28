@@ -32,10 +32,10 @@ playBtn.addEventListener("click", () => {
     
     const play = computerChoosen()
     
-    const playText = document.createElement("p")
+    let playText = document.createElement("p")
 
     computerChoose.appendChild(playText)
-    playText.innerText = play
+    playText.innerText = play    
     
 });
 
