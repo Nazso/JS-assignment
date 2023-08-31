@@ -1,10 +1,11 @@
 const addName = document.querySelector("#addName");
 const saveName = document.querySelector(".saveName");
 const resetPage = document.querySelector(".reset");
-const playBtn = document.querySelector(".btn-play")
+const playBtn = document.querySelector(".btn-play");
 
-const numberOfRounds = document.querySelector("#numberOfRounds")
-const computerChoose = document.querySelector(".computerChoose")
+const numberOfRounds = document.querySelector("#numberOfRounds");
+const computerChoose = document.querySelector(".computerChoose");
+const btnValue = document.querySelectorAll(".btn-value");
 
 const nameBox = document.querySelector(".nameBox");
 const text = document.querySelector(".text");
@@ -50,5 +51,17 @@ saveName.addEventListener('click', () => {
     console.log(addName.value)
     addName.value = ""
 
+});
+
+btnValue.forEach(e => {
+
+    e.addEventListener("click", () => {
+
+        playerChoose = e.value
+        console.log(e.value)
+
+    })
+
 })
+
 
