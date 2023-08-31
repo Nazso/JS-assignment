@@ -58,8 +58,9 @@ btnValue.forEach(e => {
 
     e.addEventListener("click", () => {
 
-        playerChoose = e.value
+        playerChoose.innerText = e.value
         console.log(e.value)
+
 
     })
 
