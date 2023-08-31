@@ -2,6 +2,7 @@ const addName = document.querySelector("#addName");
 const saveName = document.querySelector(".saveName");
 const resetPage = document.querySelector(".reset");
 const playBtn = document.querySelector(".btn-play");
+const playerChoose = document.querySelector(".player-choose")
 
 const numberOfRounds = document.querySelector("#numberOfRounds");
 const computerChoose = document.querySelector(".computerChoose");
