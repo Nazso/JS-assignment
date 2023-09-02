@@ -18,7 +18,6 @@ function headName() {
     const nameText = document.createElement("p")
     nameBox.appendChild(nameText)
     nameText.innerHTML = `<p>Welcome ${addName.value} !<p>`
-
 }
 
 resetPage.addEventListener('click', () => {
