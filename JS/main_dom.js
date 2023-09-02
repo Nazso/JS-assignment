@@ -24,6 +24,7 @@ resetPage.addEventListener('click', () => {
     location.reload()
 })
 
+//choosed by computer(random)
 function computerChoosen () {
     const index = Math.floor(Math.random() * choosedByComputer.length);
     return choosedByComputer[index];
@@ -35,11 +36,12 @@ playBtn.addEventListener("click", () => {
     
     // let playText = document.createElement("p")
     // computerChoose.appendChild(playText)
-    
+
     computerChoose.innerText = play    
     
 });
 
+//Name and rounds
 saveName.addEventListener('click', () => {
 
     rounds = numberOfRounds.value;
@@ -63,6 +65,6 @@ btnValue.forEach(e => {
 
     })
 
-})
+});
 
 
